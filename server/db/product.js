@@ -17,7 +17,7 @@ const Product = db.define('product', {
     allowNull: true
   },
   price: {
-    type: Sequelize.FLOAT
+    type: Sequelize.FLOAT(10, 2)
   },
   quantity: {
     type: Sequelize.INTEGER
