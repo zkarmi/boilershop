@@ -1,7 +1,7 @@
-const Sequelize = require('sequelize');
-const db = require('./db');
+const Sequelize = require("sequelize");
+const db = require("./db");
 
-const Customer = db.define('customer', {
+const Customer = db.define("customer", {
   firstName: {
     type: Sequelize.STRING,
     allowNull: false,
@@ -16,7 +16,8 @@ const Customer = db.define('customer', {
     type: Sequelize.STRING,
     allowNull: false,
     notEmpty: true,
-    isEmail: true
+    isEmail: true,
+    unique: true
   },
   address: {
     type: Sequelize.TEXT,
@@ -25,7 +26,7 @@ const Customer = db.define('customer', {
   imageUrl: {
     type: Sequelize.STRING,
     allowNull: false,
-    defaultValue: 'default-customer.jpg'
+    defaultValue: "default-customer.jpg"
   }
 });
 
