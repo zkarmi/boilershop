@@ -31,6 +31,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // session management using connect-session-sequelize as set above
 const { Customer } = require("./db");
 const SESSION_SECRET = require("../secret");
+
 app.use(
   session({
     secret: process.env.SESSION_SECRET || SESSION_SECRET,
@@ -56,9 +57,8 @@ passport.deserializeUser((id, done) => {
     .then(customer => done(null, customer))
     .catch(done);
 });
-console.log('in express index - before routes')
 // routes
-app.use('/auth', require('./auth'));
+app.use("/auth", require("./auth"));
 app.use("/api", require("./api"));
 
 app.get("*", function(req, res) {
