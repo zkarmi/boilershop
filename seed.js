@@ -12,6 +12,7 @@ const customerData = [
     firstName: "Ziv",
     lastName: "K",
     email: "ziv@gmail.com",
+    password: "password",
     address: "225 e 54th, NY NY, 10322",
     imageUrl: ""
   },

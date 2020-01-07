@@ -52,12 +52,13 @@ passport.serializeUser((customer, done) => {
   }
 });
 passport.deserializeUser((id, done) => {
-  Customer.findById(id)
+  Customer.findByPk(id)
     .then(customer => done(null, customer))
     .catch(done);
 });
-
+console.log('in express index - before routes')
 // routes
+app.use('/auth', require('./auth'));
 app.use("/api", require("./api"));
 
 app.get("*", function(req, res) {

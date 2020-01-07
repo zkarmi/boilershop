@@ -1,3 +1,4 @@
+/* eslint-disable nonblock-statement-body-position */
 const router = require("express").Router();
 
 // router.use("/customers", require("./customers"));
@@ -5,7 +6,7 @@ const router = require("express").Router();
 // router.use("/orders", require("./orders"));
 
 router.use(function(req, res, next) {
-  const err = new Error("Not found.");
+  const err = new Error('Not found.');
   err.status = 404;
   next(err);
 });

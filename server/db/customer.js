@@ -46,7 +46,7 @@ const Customer = db.define("customer", {
 // instance methods
 Customer.prototype.correctPassword = function(candidatePassdword) {
   return (
-    this.Model.encryptPassword(candidatePassdword, this.salt) === this.password
+    Customer.encryptPassword(candidatePassdword, this.salt) === this.password
   );
 }
 
