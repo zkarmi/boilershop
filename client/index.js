@@ -6,13 +6,15 @@ import { render } from "react-dom";
 import React from "react";
 import ReactDOM from "react-dom";
 import AllProducts from "./AllProducts";
-import Root from "./root";
+import Root from "./Root";
+import Header from "./Header";
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import Facts from "./Facts";
 import Weather from "./Weather";
 import Fails from "./Fails";
 render(
   <Router>
+    <Header />
     <Switch>
       <Route exact path="/allProducts/" component={AllProducts} />
       <Route exact path="/" component={Root} />

@@ -13,9 +13,6 @@ export default class Fails extends Component {
           words will pour in where your lost words should be. Open a gap for
           them, create a space. Be patient.
         </h1>
-        <Link className="fact-page" to="/">
-          Home Page
-        </Link>
 
         <div className="video-links">
           <iframe

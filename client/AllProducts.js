@@ -9,9 +9,6 @@ export default class AllProducts extends Component {
           <div className="page-width">
             <div className="product-grid">
               <div className="product">
-                <Link to="/" className="fact-page">
-                  Home Page
-                </Link>
                 <div className="details">
                   <h1>Remindi</h1>
                   <img

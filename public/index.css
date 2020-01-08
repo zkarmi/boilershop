@@ -16,6 +16,7 @@
 .product {
   margin: 10px;
 }
+.links.active { background-color: red; }
 .nav {
   display: flex;
   justify-content: flex-end;

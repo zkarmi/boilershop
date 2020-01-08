@@ -6,9 +6,6 @@ export default class Facts extends Component {
     return (
       <div className="the-facts">
         <h1 className="fact-page">Time you enjoy wasting is not wasted time</h1>
-        <Link className="fact-page" to="/">
-          Home Page
-        </Link>
         <div className="facts">
           <img
             className="thumbnail"
