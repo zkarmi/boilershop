@@ -2,3 +2,49 @@
   display: flex;
   justify-content: center;
 }
+
+.main-pic {
+  width: 100%;
+}
+
+#main-links {
+  display: flex;
+  justify-content: center;
+  background-color: goldenrod;
+}
+.links,
+.product {
+  margin: 10px;
+}
+.nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.thumbnail {
+  width: 35%;
+}
+.product-grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.facts {
+  display: flex;
+}
+.fact-page {
+  display: flex;
+  justify-content: center;
+}
+.the-facts {
+  background-color: lightcoral;
+}
+.weather-page {
+  background-color: lightskyblue;
+}
+.product-page {
+  background-color: lightsalmon;
+}
+.fails-page {
+  background-color: peru;
+}

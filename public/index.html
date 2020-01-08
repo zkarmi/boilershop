@@ -4,63 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
     <title>Boiler Shop</title>
+    <link rel="stylesheet" href="/index.css" />
   </head>
   <body>
     <div>
-      <form action="/api/auth/login" method="put">
-        <input type="text" name="email" />
-        <input type="password" name="password" />
-        <input type="submit" name="login" value="login" />
-      </form>
-    </div>
-    <header>
-      <h1 id="logo">BoilerShop</h1>
-      <nav id="main-nav">
-        <ul>
-          <li>Shop</li>
-          <li>Account</li>
-          <li>Checkout</li>
-        </ul>
-      </nav>
-    </header>
-    <div class="container page-content">
-      <div class="page-width">
-        <!-- Product view -->
-        <div class="product-grid">
-          <div class="product">
-            <img class="thumbnail" src="default-product.jpg" />
-            <div class="details">
-              <h3>Product Name Here</h3>
-              <span classs="price">$1.00</span>
-              <button class="add-to-cart">Buy Now</button>
-            </div>
-          </div>
-          <div class="product">
-            <img class="thumbnail" src="default-product.jpg" />
-            <div class="details">
-              <h3>Product Name Here</h3>
-              <span classs="price">$1.00</span>
-              <button class="add-to-cart">Buy Now</button>
-            </div>
-          </div>
-          <div class="product">
-            <img class="thumbnail" src="default-product.jpg" />
-            <div class="details">
-              <h3>Product Name Here</h3>
-              <span classs="price">$1.00</span>
-              <!-- price -->
-              <button class="add-to-cart">Buy Now</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="page-width">
-        <!-- Customer view -->
-      </div>
-    </div>
     <div id="app"></div>
-    <script src="/bundle.js"></script>
+    <script async defer src="/bundle.js"></script>
   </body>
 </html>
