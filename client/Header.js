@@ -3,7 +3,6 @@ import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
 
-  console.log('entered header');
   return (
     <div>
       <nav className="nav">
